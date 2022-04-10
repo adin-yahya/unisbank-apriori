@@ -1,0 +1,1 @@
+class VerticalPage{constructor(){}}
