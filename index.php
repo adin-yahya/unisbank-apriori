@@ -49,7 +49,7 @@ $get_page = empty($_GET['page']) ? "penjualan" : $_GET['page'];
     <div id="root">
         <div id="nav" class="nav-container d-flex">
             <div class="nav-content d-flex">
-                <img style="max-height: 50px;" src="img/logo/unisbank-landscape.png" alt="" srcset="">
+                <img style="max-height: 50px;" src="img/logo/logo.jpeg" alt="" srcset="">
                 <!-- <div class="language-switch-container">
                     <button class="btn btn-empty language-button dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</button>
                     <div class="dropdown-menu">

@@ -1,1 +1,1 @@
-insert into transaksi values(null,'2022-03-15','buncis, kecap')
+insert into transaksi values(null,'2022-04-17','plakatkayu, kerajinankuningan')
