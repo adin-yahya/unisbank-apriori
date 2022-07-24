@@ -24,7 +24,7 @@ use Phpml\Association\Apriori;
                     </div>
                     <div class="col-auto form-group me-3">
                         <label class="form-label">Min Support</label>
-                        <input name="support" type="number" class="form-control" step="0.1" value="<?= isset($_POST['support'])? $_POST['support']: '0.2'; ?>" style="width: fit-content;">
+                        <input name="support" type="number" class="form-control" step="0.1" value="<?= isset($_POST['support'])? $_POST['support']: '0.09'; ?>" style="width: fit-content;">
                     </div>
                     <div class="col-auto form-group me-3">
                         <label class="form-label">Min Confidence</label>
@@ -41,6 +41,8 @@ use Phpml\Association\Apriori;
                 }, $dataDB);
                 $labels  = [];
                 $associator = new Apriori($support = $_POST['support'], $confidence = $_POST['confidence']);
+                // $associator = new Apriori($_POST['support'], $_POST['confidence']);
+                // $associator = new Apriori(0, 0);
                 $associator->train($samples, $labels);
                 $assoc = $associator->getRules();
                 $frequent = $associator->apriori();
